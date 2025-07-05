@@ -7,21 +7,15 @@ public class HollowRectangle {
      int m = sc.nextInt();
      System.out.println("Enter number of Rows :");
      int n = sc.nextInt();
-    for(int i = 1 ; i<=m ; i++) {
-        System.out.print("*");
-    }
-    System.out.println("");
-    for(int j = 1 ; j<=n-2 ; j++) {
-        System.out.print("*");
-        for(int i = 1 ; i<=m-2 ; i++) {
-            System.out.print(" ");
-        }
-        System.out.print("*");
-        System.out.println("");
-    }
-    for(int i = 1 ; i<=m ; i++) {
-        System.out.print("*");
-    }
+     for(int i = 1 ; i<=n ; i++) {
+        for(int j =1 ; j<=m ; j++) {
+            if (i==1 || j==1 || i==n || j==m) {
+                System.out.print("*");
+            } else {
+                  System.out.print(" ");
+              }
+        } System.out.println("");
+     }
 
     }
 }
